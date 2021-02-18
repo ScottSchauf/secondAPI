@@ -4,40 +4,35 @@
     <meta charset="utf-8">
     <title>Local Forecasts</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Your Local Forecast Information</h1>
-    <form>
-    <p>
-        <button class="submit">Get Your Nearest City's Data</button>
-    </p>
-    </form>
+    <h1>Local Forecast</h1>
 
 
 <table>
-    <tr>
-        <td>City: </td>
+    <tr class="headings">
+        <td width="35%">City</td>
+        <td width="35%">State</td>
+        <td width="10%">Country</td>
+        <td width="10%">Temp</td>
+        <td width="10%">Humidity</td>
+    </tr>
+    <tr class="results">
         <td><div id="printCity" class="printCity"></div></td>
-    </tr>
-    <tr>
-        <td>State: </td>
         <td><div id="printState" class="printState"></div></td>
-    </tr>
-    <tr>
-        <td>Country: </td>
         <td><div id="printCountry" class="printCity"></div></td>
-    </tr>
-    <tr>
-        <td>Current Temperature: </td>
         <td><div id="printTemp" class="printState"></div></td>
-    </tr>
-    <tr>
-        <td>Current Humidity: </td>
         <td><div id="printHumid" class="printCity"></div></td>
     </tr>
 </table>
 
-
+<form>
+    <p>
+        <button class="submit">Get Your Forecast!</button>
+    </p>
+</form>
 
     <script type="text/javascript" src="script.js"></script>
   </body>
